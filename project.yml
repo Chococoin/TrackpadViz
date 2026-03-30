@@ -1,0 +1,22 @@
+name: TrackpadViz
+options:
+  bundleIdPrefix: com.chocos
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+
+targets:
+  TrackpadViz:
+    type: application
+    platform: macOS
+    sources: [TrackpadViz]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.chocos.TrackpadViz
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        CODE_SIGN_ENTITLEMENTS: TrackpadViz/TrackpadViz.entitlements
+        INFOPLIST_FILE: TrackpadViz/Info.plist
+        SWIFT_VERSION: "5.10"
+        ENABLE_APP_SANDBOX: "NO"
+        CODE_SIGN_IDENTITY: "-"
+        SWIFT_OBJC_BRIDGING_HEADER: TrackpadViz/TrackpadViz-Bridging-Header.h
